@@ -1,14 +1,14 @@
 # NordVPN as a Rotating Proxy
 Use NordVPN as a rotating proxy for light web scraping
 
-## Setup NordVPN Proxy
+## Build & Install NordVPN Proxy
 
 1. Install the NordVPN for Linux package from source, here: https://github.com/kidGodzilla/nordvpn (do not use prebuilt binaries, this source has been modified). You will also need to `apt-get install openvpn` if you don't already have it.
 2. Run `nordvpn` once to set everything up (you just need your username & password)
 3. Set up a `crontab -e` for:
 
 ```
-*/5 * * * *     killall openvpn & /usr/local/bin/nordvpn &
+*/5 * * * * killall -q -o 4m openvpn & sudo /usr/local/bin/nordvpn
 ```
 
 ## Setup this repo
