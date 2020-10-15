@@ -1,0 +1,26 @@
+{
+  "name": "nordvpn-as-rotating-proxy",
+  "version": "1.0.0",
+  "description": "Use NordVPN as a rotating proxy for light web scraping",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kidGodzilla/nordvpn-as-rotating-proxy.git"
+  },
+  "author": "James Futhey <futhey@gmail.com> (http://jamesfuthey.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kidGodzilla/nordvpn-as-rotating-proxy/issues"
+  },
+  "homepage": "https://github.com/kidGodzilla/nordvpn-as-rotating-proxy#readme",
+  "dependencies": {
+    "cluster": "^0.7.7",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "os": "^0.1.1",
+    "superagent": "^6.1.0"
+  }
+}
