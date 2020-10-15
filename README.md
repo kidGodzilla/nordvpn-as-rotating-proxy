@@ -8,7 +8,7 @@ Use NordVPN as a rotating proxy for light web scraping
 3. Set up a `crontab -e` for:
 
 ```
-*/5 * * * *     killall openvpn && /usr/local/bin/nordvpn &
+*/5 * * * *     killall openvpn & /usr/local/bin/nordvpn &
 ```
 
 ## Setup this repo
