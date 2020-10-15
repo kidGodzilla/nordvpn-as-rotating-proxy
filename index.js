@@ -44,6 +44,10 @@ if (cluster.isMaster) {
         request.get(url).pipe(res);
     });
 
+    app.get('/whatismyip', (req, res) => {
+        res.redirect('/pipe?url=api.mr365.co/whatismyip');
+    });
+
     app.get('/', (req, res) => {
         res.send('nothing to see here.');
     });
